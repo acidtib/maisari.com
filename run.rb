@@ -50,8 +50,8 @@ require 'parameterize'
   },
   {
     client: "Pornify",
-    description: "",
-    url: "na",
+    description: "Pornify allows users to curate their porn, quickens access to content preferences, and improves overall user experience.",
+    url: "http://pornify.ninja/",
     categorys: [
       "Branding",
       "Illustration",
