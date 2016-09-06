@@ -75,8 +75,8 @@ require 'parameterize'
   },
   {
     client: "Bitstop",
-    description: "",
-    url: "na",
+    description: "Bitstop is the safest, easiest, and most reliable way to buy bitcoin with cash. They are the first ever bitcoin ATM in Florida. I redesigned their home page and designed the remaining pages of the site.",
+    url: "http://bitstop.co",
     categorys: [
       "Illustration",
       "Graphic Design"
