@@ -22,7 +22,7 @@ require 'parameterize'
       "Graphic Design"
     ],
     images: true,
-    icons: true
+    icons: false
   },
   {
     client: "Trust Women",
