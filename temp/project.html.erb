@@ -137,6 +137,12 @@
                       </div>
                     <% end %>
                   <% end %>
+
+                  <% if @project[:video] != "na" %>
+                    <div class="col-md-12">
+                      <%= @project[:video] %>
+                    </div>
+                  <% end %>
 								</div>
                 <% if @project[:icons] == true %>
                   <% @icons.each do |icon| %>

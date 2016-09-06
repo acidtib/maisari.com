@@ -38,7 +38,8 @@ end
       "Graphic Design"
     ],
     images: true,
-    icons: false
+    icons: false,
+    video: "na"
   },
   {
     client: "Let's Roam",
@@ -49,7 +50,8 @@ end
       "Graphic Design"
     ],
     images: true,
-    icons: false
+    icons: false,
+    video: "na"
   },
   {
     client: "Trust Women",
@@ -60,7 +62,8 @@ end
       "Graphic Design"
     ],
     images: true,
-    icons: false
+    icons: false,
+    video: "na"
   },
   {
     client: "Being",
@@ -73,7 +76,8 @@ end
       "Founder"
     ],
     images: true,
-    icons: false
+    icons: false,
+    video: '<iframe src="https://player.vimeo.com/video/181583798" width="640" height="427" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
   },
   {
     client: "Pornify",
@@ -87,7 +91,8 @@ end
       "Founder"
     ],
     images: true,
-    icons: false
+    icons: false,
+    video: "na"
   },
   {
     client: "Shoot My Travel",
@@ -98,7 +103,8 @@ end
       "Graphic Design"
     ],
     images: true,
-    icons: false
+    icons: false,
+    video: "na"
   },
   {
     client: "Bitstop",
@@ -109,7 +115,8 @@ end
       "Graphic Design"
     ],
     images: true,
-    icons: false
+    icons: false,
+    video: "na"
   },
   {
     client: "Klangbox",
@@ -120,7 +127,8 @@ end
       "Graphic Design"
     ],
     images: true,
-    icons: false
+    icons: false,
+    video: "na"
   },
   {
     client: "Arts For Learning",
@@ -131,7 +139,8 @@ end
       "Graphic Design"
     ],
     images: true,
-    icons: true
+    icons: true,
+    video: "na"
   },
   {
     client: "MIA Underwater",
@@ -145,7 +154,8 @@ end
       "Founder"
     ],
     images: true,
-    icons: false
+    icons: false,
+    video: "na"
   },
   {
     client: "The Plantain",
@@ -157,7 +167,8 @@ end
       "Founder"
     ],
     images: true,
-    icons: false
+    icons: false,
+    video: "na"
   }
 ]
 
