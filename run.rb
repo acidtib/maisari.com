@@ -145,7 +145,7 @@ end
       "Founder"
     ],
     images: true,
-    icons: true
+    icons: false
   },
   {
     client: "The Plantain",
