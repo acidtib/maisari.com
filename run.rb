@@ -1,6 +1,33 @@
 require 'erb'
 require 'parameterize'
 
+def whatsNext(client)
+  case client
+  when "Miami Mini Maker Faire"
+    return {prev: "The Plantain", next: "Lets Roam"}
+  when "Lets Roam"
+    return {prev: "Miami Mini Maker Faire", next: "Trust Women"}
+  when "Trust Women"
+    return {prev: "Lets Roam", next: "Being"}
+  when "Being"
+    return {prev: "Trust Women", next: "Pornify"}
+  when "Pornify"
+    return {prev: "Being", next: "Shoot My Travel"}
+  when "Shoot My Travel"
+    return {prev: "Pornify", next: "Bitstop"}
+  when "Bitstop"
+    return {prev: "Shoot My Travel", next: "Klangbox"}
+  when "Klangbox"
+    return {prev: "Bitstop", next: "Arts For Learning"}
+  when "Arts For Learning"
+    return {prev: "Klangbox", next: "MIA Underwater"}
+  when "MIA Underwater"
+    return {prev: "Arts For Learning", next: "The Plantain"}
+  when "The Plantain"
+    return {prev: "MIA Underwater", next: "Miami Mini Maker Faire"}
+  end
+end
+
 @projects = [
   {
     client: "Miami Mini Maker Faire",
@@ -37,7 +64,7 @@ require 'parameterize'
   },
   {
     client: "Being",
-    description: "",
+    description: "Being is a concept I created for a self-help accountability app. It connects to a wristband, to monitor your vitals, and your technology to aid in the user’s journey of personal growth.",
     url: "na",
     categorys: [
       "Branding",
@@ -64,8 +91,8 @@ require 'parameterize'
   },
   {
     client: "Shoot My Travel",
-    description: "",
-    url: "na",
+    description: "Forget selfies, with Shoot My Travel anyone can book a personal photographer for a couple of hours to capture candid moments as they guide them through the city.",
+    url: "http://www.shootmytravel.com/",
     categorys: [
       "UI/UX",
       "Graphic Design"
@@ -86,8 +113,8 @@ require 'parameterize'
   },
   {
     client: "Klangbox",
-    description: "",
-    url: "na",
+    description: "Klangbox.fm is comprised of an all-star roster of local DJs, notable personalities, advocacy groups, artists, and more. The app serves as a place to tune in, check the program schedule, and connect to klanbox social.",
+    url: "https://itunes.apple.com/us/app/klangbox/id1092363701?mt=8",
     categorys: [
       "UI/UX",
       "Graphic Design"
@@ -97,8 +124,8 @@ require 'parameterize'
   },
   {
     client: "Arts For Learning",
-    description: "",
-    url: "na",
+    description: "Arts for Learning is a non-profit organization dedicated to advancing teaching and learning through the arts and community cultural resources. <br><br> As summer camp approached, they were looking to add art to their walls. I designed a button wall filled with words and illustrations representing Arts for Learning. Buttons are removable and replaceable.",
+    url: "http://a4lmiami.org/",
     categorys: [
       "Illustration",
       "Graphic Design"
@@ -108,8 +135,8 @@ require 'parameterize'
   },
   {
     client: "MIA Underwater",
-    description: "",
-    url: "na",
+    description: "MIA Underwater is an app that shows how underwater user’s current location will be in the year 2050 based on scientific predictions. In an effort to spread awareness, it also serves as a hub for climate change related news, events, and tools.",
+    url: "http://www.miaunderwater.com/",
     categorys: [
       "Branding",
       "Illustration",
@@ -122,8 +149,8 @@ require 'parameterize'
   },
   {
     client: "The Plantain",
-    description: "",
-    url: "na",
+    description: "I am a co-founder, designer, and photoshop magic contributor to The Plantain. It is a Miami focused satirical news website created to spread awareness of local news through humor.",
+    url: "http://www.theplantain.com/",
     categorys: [
       "Branding",
       "Graphic Design",
