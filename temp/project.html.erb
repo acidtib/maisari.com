@@ -40,6 +40,13 @@
 <div class="site-loading">
 	<img src="../assets/img/loading.gif" alt="Loading">
 </div>
+
+<% if @project[:client] == "Pornify" %>
+  <div class="nsfw">
+    <h2>WARNING: the following content includes nudity and is NSFW.</h2>
+    <button class="btn btn-radius lets-see">LETS SEE</button> - <a href="../index.html" class="btn btn-radius">GO BACK</a>
+  </div>
+<% end %>
 <!-- Site Loading End -->
 
 <!-- Site Back Top -->
