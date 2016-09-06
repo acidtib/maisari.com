@@ -105,7 +105,7 @@
 		color					: #000;
 	}
 	.site-header .header-nav > ul > li > ul > li > a{
-		color					: #b28645;
+		color					: #ed017f;
 	}
 	.site-header .header-nav > ul > li > ul > li > ul > li > a{
 		color					: #999;
@@ -468,7 +468,7 @@
 		color					: #000;
 	}
 	.site-header .header-nav > ul > li:hover > a{
-		color					: #b28645;
+		color					: #ed017f;
 	}
 	.site-header .header-nav > ul > li.sub:hover > a{
 		color					: #000;

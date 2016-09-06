@@ -64,7 +64,7 @@ p{
 }
 
 a{
-	color					: #b28645;
+	color					: #ed017f;
 	outline					: 0;
 	text-decoration			: none;
 }
@@ -348,7 +348,7 @@ a, .btn,
 	margin-left				: 5px;
 }
 .btn-more:hover{
-	color					: #b28645;
+	color					: #ed017f;
 }
 
 .data-form{
@@ -451,7 +451,7 @@ a, .btn,
 }
 .page-header .post-meta > ul > li.meta-author a:hover,
 .page-header .post-meta > ul > li.meta-comments a:hover{
-	color					: #b28645;
+	color					: #ed017f;
 }
 .page-header .post-meta > ul > li.meta-date .fa,
 .page-header .post-meta > ul > li.meta-comments .fa{
@@ -511,11 +511,11 @@ a, .btn,
 	color					: #000;
 }
 .widget-pager ul li:hover a{
-	border-color			: #b28645;
+	border-color			: #ed017f;
 }
 .widget-pager ul li.active a{
-    color                   : #b28645;
-    border-color            : #b28645;
+    color                   : #ed017f;
+    border-color            : #ed017f;
 
 }
 
@@ -559,7 +559,7 @@ a, .btn,
 	color					: #000;
 }
 .widget-nav-social ul li a:hover{
-	color					: #b28645;
+	color					: #ed017f;
 }
 .widget-nav-social.o-boxed ul li{
 	margin-right			: 5px;
@@ -583,7 +583,7 @@ a, .btn,
 	color					: #000;
 }
 .widget-nav-post ul li a:hover{
-	color					: #b28645;
+	color					: #ed017f;
 }
 .widget-nav-post ul li span{
 	display					: block;
@@ -655,7 +655,7 @@ a, .btn,
 	color					: #000;
 }
 .widget-contact-info > ul > li a:hover{
-	color					: #b28645;
+	color					: #ed017f;
 }
 .widget-contact-info > ul > li p:last-of-type{
 	margin-bottom			: 0;
@@ -757,7 +757,7 @@ a, .btn,
 	color					: #000;
 }
 .widget-projects .projects-item .item-info h4 a:hover{
-	color					: #b28645;
+	color					: #ed017f;
 }
 .widget-projects .projects-item .item-info p{
 	font-weight				: 500;
@@ -770,7 +770,7 @@ a, .btn,
 	color					: #666;
 }
 .widget-projects .projects-item .item-info p a:hover{
-	color					: #b28645;
+	color					: #ed017f;
 }
 .widget-projects .projects-item:hover .item-photo img{
 	-webkit-transform		: scale(1.1);
@@ -870,7 +870,7 @@ a, .btn,
 	color					: #000;
 }
 .widget-projects-single-info a:hover{
-	color					: #b28645;
+	color					: #ed017f;
 }
 
 .widget-blog .blog-item{
@@ -952,7 +952,7 @@ a, .btn,
 .widget-blog .format-video .item-meta ul li a:hover,
 .widget-blog .format-audio .item-title a:hover,
 .widget-blog .format-audio .item-meta ul li a:hover{
-	color					: #b28645;
+	color					: #ed017f;
 }
 
 .widget-blog .format-quote,
@@ -1168,7 +1168,7 @@ a, .btn,
 	color					: #000;
 }
 .widget-blog-sidebar .sidebar-widget a:hover{
-	color					: #b28645;
+	color					: #ed017f;
 }
 .widget-blog-sidebar .sidebar-widget:last-child{
     margin-bottom           : 0;
@@ -1391,7 +1391,7 @@ a, .btn,
 	color					: #000;
 }
 .widget-author-profile .profile-title a:hover{
-	color					: #b28645;
+	color					: #ed017f;
 }
 .widget-author-profile .profile-desc p:last-child{
 	margin-bottom			: 0;
@@ -1449,7 +1449,7 @@ a, .btn,
 	color					: #000;
 }
 .widget-comments .comments-list .comment .comment-info .comment-user a:hover{
-	color					: #b28645;
+	color					: #ed017f;
 }
 .widget-comments .comments-list .comment .comment-info .comment-date{
     margin-top              : 5px;
@@ -1599,4 +1599,8 @@ a, .btn,
 .nsfw .btn {
 	color: #000;
 	background-color: #fff;
+}
+
+.nsfw .btn:hover {
+	color: #ed017f;
 }
