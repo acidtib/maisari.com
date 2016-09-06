@@ -141,7 +141,7 @@
                 <% if @project[:icons] == true %>
                   <% @icons.each do |icon| %>
                     <% if icon.include?("png") || icon.include?("jpg") %>
-                      <div class="col-md-3">
+                      <div class="col-md-6">
                         <div class="gallery-item">
                           <a href="../assets/img/projects/<%= @project[:client].parameterize %>/icons/<%= icon %>" title="<%= @project[:client] %>" class="popup-gallery">
                             <img src="../assets/img/projects/<%= @project[:client].parameterize %>/icons/<%= icon %>" alt="<%= @project[:client] %>">

@@ -4,11 +4,11 @@ require 'parameterize'
 def whatsNext(client)
   case client
   when "Miami Mini Maker Faire"
-    return {prev: "The Plantain", next: "Lets Roam"}
-  when "Lets Roam"
+    return {prev: "The Plantain", next: "Let's Roam"}
+  when "Let's Roam"
     return {prev: "Miami Mini Maker Faire", next: "Trust Women"}
   when "Trust Women"
-    return {prev: "Lets Roam", next: "Being"}
+    return {prev: "Let's Roam", next: "Being"}
   when "Being"
     return {prev: "Trust Women", next: "Pornify"}
   when "Pornify"
@@ -41,7 +41,7 @@ end
     icons: false
   },
   {
-    client: "Lets Roam",
+    client: "Let's Roam",
     description: "Let’s Roam is an app that invites you to explore your neighborhood through curated events, food, and culture.",
     url: "http://findyouradventurenow.com/",
     categorys: [
@@ -131,7 +131,7 @@ end
       "Graphic Design"
     ],
     images: true,
-    icons: false
+    icons: true
   },
   {
     client: "MIA Underwater",
@@ -163,8 +163,8 @@ end
 
 @projects.each do |project|
   puts "building: #{project[:client]}"
-  project_erb = 'temp/project.html.erb'
-  html_file = File.basename(project_erb, '.erb')
+  project_erb = "temp/project.html.erb"
+  html_file = File.basename(project_erb, ".erb")
   erb_str = File.read(project_erb)
   @project = project
 
