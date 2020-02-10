@@ -17,13 +17,15 @@
             <div class="user-contact-form">
               <form name="contact_form" action="#" onsubmit="return sendEmail();">
                 <div class="title">Dear Mai,</div>
-                <input type="hidden" name="toEmail" value="hello@maisari.com" />
                 <textarea name="message" type="text" required placeholder="Write your message here.."></textarea>
+                
                 <div class="subtitle">Best,</div>
+                
                 <div class="sender">
                   <input class="s-name" name="senderName" type="text" required placeholder="Your name" />
                   <input class="s-mail" name="senderEmail" type="text" required placeholder="Your email" />
                 </div>
+                
                 <button type="submit">Send email</button>
                 <div class="um">or find me at <a href="mailto:hello@maisari.com">hello@maisari.com</a></div>
               </form>
@@ -36,3 +38,46 @@
     </div>
   </div>
 </div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+  function sendEmail() {
+    var form = document.forms["contact_form"];
+    
+    createStatusMessage();
+
+    axios.post('/contact', {
+      message: form["message"].value,
+      senderName: form["senderName"].value,
+      senderEmail: form["senderEmail"].value
+    })
+      .then(function (response) {
+        messageSent(true);
+        form.reset();
+      })
+      .catch(function (error) {
+        messageSent(false);
+        form.reset();
+      });
+
+    return false;
+  }
+
+  function createStatusMessage() {
+    var messageContainer = document.createElement("span"),
+      sendingMessage = document.createTextNode("Sending...");
+    messageContainer.classList.add("message");
+    messageContainer.appendChild(sendingMessage);
+    document.querySelector(".user-contact-form").classList.toggle('message-sent');
+    document.querySelector(".ufo--contact-page").appendChild(messageContainer);
+  }
+  function messageSent(success) {
+    var message = success ? "Message sent." : "Something went wrong. Try again.";
+    document.querySelector(".message").innerHTML = message;
+    setTimeout(function () {
+      var messageContainer = document.querySelector(".message");
+      document.querySelector(".user-contact-form").classList.toggle('message-sent');
+      document.querySelector(".ufo--contact-page").removeChild(messageContainer);
+    }, 3000);
+  }
+</script>

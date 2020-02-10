@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET about page. */
+/* GET project page. */
 router.get('/hodl-wallet', function (req, res, next) {
   res.render('project/hodl_wallet', { title: 'HODL WALLET' });
 });
