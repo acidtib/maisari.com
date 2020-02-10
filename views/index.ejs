@@ -1,0 +1,89 @@
+<div class="ufo--portfolio-container">
+  <div class="profile-page profile_theme_two profile--hp">
+    <div class="ufo--container">
+      <div class="ufo--user-profile-info profile_theme_two">
+        <div class="profile-info has-picture">
+
+          <div class="profile-cover profile-picture">
+            <img src="./images/PEUcgjiLOfZQh5FV.png">
+          </div>
+          <div class="profile-short-cv">
+            <div class="profile-about">
+              <h1>MAI SARI</h1><br>
+              <h3>Visual/Product Designer &amp; Illustrator</h3><br>
+              <p>I’m a UX designer. I’m passionate about creating usable digital products. I have worked with
+                incredibly talented people across different companies.</p>
+            </div>
+            <div class="profile-links">
+              <div class="social-platforms">
+                <a href="https://dribbble.com/hellomaisari" target="_blank" class="dribbble">
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/hellomaisari/" target="_blank" class="linkedin">
+                  <i class="fa fa-linkedin"></i>
+
+                </a>
+                <a href="https://www.instagram.com/musubikami/" target="_blank" class="instagram">
+                  <i class="fa fa-instagram"></i>
+
+                </a>
+              </div>
+              <div class="profile-navigation">
+                <div class="profile-button ">
+                  <a href="/about" class="btn">About</a>
+                </div>
+                <div class="profile-button contact-button ">
+                  <a href="/contact" class="btn">Contact</a>
+                </div>
+                <div class="profile-button resume-button">
+                  <a href="https://storage.googleapis.com/uxfolio/5e3863a9ac4c4c00049167ed/cv/MaiSari_Resume_b4t.pdf"
+                    target="_blank" rel="nofollow noopener" class="btn">Resumé</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ufo--user-projects-list">
+        <div class="works_line_profile_theme_two"></div>
+        <div class="ufo--user-projects">
+          <div class="projects-list ">
+            <a href="/project/hodl-wallet"
+              class="project title-is--visible title-is--left title-is--dark thumbnail-is--medium thumbnail-is--medium-left title-align--middle title-justify--left">
+              <div class="project-name">
+                <div class="project-title">HODL Wallet</div>
+                <div class="project-subtitle">A secure, easy to use Bitcoin centric wallet offering mobile users a
+                  platform to hold, send, and receive their Bitcoin. </div>
+              </div>
+              <div class="image-container">
+                <img src="/images/6r6CbBpWVBnatpkT.jpg">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .top-navbar {
+    display: none;
+  }
+</style>
+
+<script>
+  $(window).on('scroll', function () {
+    scrollPosition = $(this).scrollTop();
+    if (scrollPosition >= 50) {
+      $(".top-navbar").css('display', 'flex');
+      $(".profile-links").hide()
+    } else {
+      $(".top-navbar").hide()
+      $(".profile-links").show()
+    }
+  });
+</script>

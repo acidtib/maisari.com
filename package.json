@@ -1,0 +1,27 @@
+{
+  "name": "maisari.com",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arubinofaux/maisari.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arubinofaux/maisari.com/issues"
+  },
+  "homepage": "https://github.com/arubinofaux/maisari.com#readme",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~3.0.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express": "~4.17.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "node-sass-middleware": "0.11.0"
+  }
+}
