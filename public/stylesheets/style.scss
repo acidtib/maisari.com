@@ -3379,13 +3379,43 @@ screen and (-ms-high-contrast: active) {
 }
 
 
-    .profile_theme_two.ufo--user-profile-info,
-    .ufo--user-projects-list,
-    .ufo--user-profile-info .profile-about,
-    .ufo--about-page {
-      --title-font: "Montserrat";
-      --body-font: "Quattrocento";
-    }
+.profile_theme_two.ufo--user-profile-info,
+.ufo--user-projects-list,
+.ufo--user-profile-info .profile-about,
+.ufo--about-page {
+  --title-font: "Montserrat";
+  --body-font: "Quattrocento";
+}
+
+.p_section--header-main .text-container h1 {
+  color: #353738;
+  text-align: center;
+}
+
+.p_section--header-main .text-container h2 {
+  color: #353738;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+	.p_section--header-main .text-container h2 {
+		font-size: 1.35rem;
+	}
+}
+@media (min-width: 992px) {
+          .p_section--header-main .text-container h1 {
+		font-size: 5.5rem;
+          }
+          .p_section--header-main .text-container h2 {
+              font-size: 1.35rem;
+          }
+          .p_section--header-main .text-container {
+              top: 100%;
+              left: 50%;
+              transform: translate(-50%, -100%);
+          }
+              .p_section--header-main .image-container {height: 680px;}
+}
 
 /* ------------------------------------------ */
 
