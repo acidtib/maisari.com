@@ -70,7 +70,9 @@
     messageContainer.appendChild(sendingMessage);
     document.querySelector(".user-contact-form").classList.toggle('message-sent');
     document.querySelector(".ufo--contact-page").appendChild(messageContainer);
+    window.scrollTo(0, 0); 
   }
+
   function messageSent(success) {
     var message = success ? "Message sent." : "Something went wrong. Try again.";
     document.querySelector(".message").innerHTML = message;
