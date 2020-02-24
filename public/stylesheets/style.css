@@ -10852,7 +10852,7 @@ select {
 
 @media (min-width: 768px) {
   .profile-page .profile_theme_two {
-    padding-top: 78px; }
+    padding-top: 40px; }
   .profile-page .profile_theme_two .profile-info {
     margin-bottom: 0;
     margin-top: 0; }
@@ -24458,5 +24458,7 @@ project-edit-nav.is-visible li:nth-child(4) {
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
+.point-left {
+  margin-left: 38px !important; }
 
 /*# sourceMappingURL=style.css.map */
