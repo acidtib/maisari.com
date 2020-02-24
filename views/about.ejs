@@ -28,15 +28,15 @@
               <p>I bring my empathetic personality to any project, making the processes of solving user pain points and meeting
                 business needs flow organically and generate optimal results!</p>
               <p>I’ve worked on a wide range of entrepreneurial projects such as <a rel="nofollow"
-                  href="https://theplantain.com/">The Plantain</a>&nbsp;and&nbsp;<a rel="nofollow"
-                  href="https://www.instagram.com/darkmattercollective/">Dark Matter Collective</a>. My portfolio includes work on
+                  href="https://theplantain.com/" target="_blank">The Plantain</a>&nbsp;and&nbsp;<a rel="nofollow"
+                  href="https://www.instagram.com/darkmattercollective/" target="_blank">Dark Matter Collective</a>. My portfolio includes work on
                 projects in fintech, travel, education, STEAM, news, and music, and covers topics such as diversity, activism,
                 politics, and humor. </p>
               <h3>A bit more about me?</h3>
               <p>You mean other than being a serial entrepreneur and constantly fleshing out ideas and prototyping?</p>
               <p>Well, I’m a tv show binger and YouTube lover, enjoy illustrating in my free time, and travel every chance I get.
                 I’m also the happy mom to my two cats, Emi and Ori, and I have a serious addiction to Indian food.&nbsp;</p>
-              <p>Want to connect? Say hello.</p>
+              <p>Want to connect? <a href="/contact">Say hello</a>.</p>
             </div>
 
           </div>
@@ -52,8 +52,7 @@
   $.get("/api/dribbble", function (data) {
       $.each(data.reverse(), function (i, val) {
         $('#dribbbleShots').prepend(
-          // '<li class="shot" target="_blank" href="' + val.html_url + '" title="' + val.title + '"><div class="title">' + val.title + '</div><img src="' + val.images.hidpi + '"/></li>'
-          '<li class="shot"><a href="' + val.html_url + '" target="_blank"><div class="title">' + val.title + '</div><img src="' + val.images.hidpi + '"/></a></li>'
+          '<li class="shot" data-id="'+val.id+'"><a href="' + val.html_url + '" target="_blank"><div class="title">' + val.title + '</div><img src="' + val.image + '"/></a></li>'
         )
       })
     })
