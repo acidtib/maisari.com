@@ -15,22 +15,146 @@
 
           <div class="ufo--about-content">
 
+            <div class="about-picture">
+              <img src="/images/x4LqiQBzTb0ps7Yt.jpg">
+            </div>
 
-            <div class="about-text no-pic">
-              <h3>This is your heading</h3>
-              <p>You can write here as much as you want, this text will always look nice, whether you write longer
-                paragraphs or just a few words. Click here and try it out.</p>
-              <p><b>Guiding Questions:</b></p>
-              <ul>
-                <li>How did you get into UX?</li>
-                <li>What are you passionate about?</li>
-                <li>What do you do when you are not designing?</li>
-              </ul>
+            <div class="about-text ">
+              <h3>Hello!</h3>
+              <p><span style="font-family: var(--body-font); font-size: 16px; background-color: transparent;">My name is Mai, and
+                  I'm passionate about building brands and designing products end-to-end for startups, small businesses, and
+                  non-profits. I have a strong, diverse background in branding and visual design, which combined with over ten years
+                  of industry experience helps me take a holistic approach to any product design challenge.</span></p>
+              <p>I bring my empathetic personality to any project, making the processes of solving user pain points and meeting
+                business needs flow organically and generate optimal results!</p>
+              <p>I’ve worked on a wide range of entrepreneurial projects such as <a rel="nofollow"
+                  href="https://theplantain.com/">The Plantain</a>&nbsp;and&nbsp;<a rel="nofollow"
+                  href="https://www.instagram.com/darkmattercollective/">Dark Matter Collective</a>. My portfolio includes work on
+                projects in fintech, travel, education, STEAM, news, and music, and covers topics such as diversity, activism,
+                politics, and humor. </p>
+              <h3>A bit more about me?</h3>
+              <p>You mean other than being a serial entrepreneur and constantly fleshing out ideas and prototyping?</p>
+              <p>Well, I’m a tv show binger and YouTube lover, enjoy illustrating in my free time, and travel every chance I get.
+                I’m also the happy mom to my two cats, Emi and Ori, and I have a serious addiction to Indian food.&nbsp;</p>
+              <p>Want to connect? Say hello.</p>
             </div>
 
           </div>
         </div>
       </div>
     </div>
+
+    <ul id="dribbbleShots"></ul>
   </div>
 </div>
+
+<script>
+  $.get("/api/dribbble", function (data) {
+      $.each(data.reverse(), function (i, val) {
+        $('#dribbbleShots').prepend(
+          // '<li class="shot" target="_blank" href="' + val.html_url + '" title="' + val.title + '"><div class="title">' + val.title + '</div><img src="' + val.images.hidpi + '"/></li>'
+          '<li class="shot"><a href="' + val.html_url + '" target="_blank"><div class="title">' + val.title + '</div><img src="' + val.images.hidpi + '"/></a></li>'
+        )
+      })
+    })
+    .fail(function (error) {
+      console.log(error);
+    });
+</script>
+
+<style>
+#dribbbleShots {
+  margin-top: 82px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -.5rem;
+  margin-left: -.5rem;
+}
+
+#dribbbleShots li {
+  cursor: pointer;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+  box-sizing: border-box;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  padding-right: .5rem;
+  padding-left: .5rem;
+  flex-basis: 30.333333%;
+  max-width: 30.333333%;
+  position: relative;
+  height: 300px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.3s;
+  overflow: hidden;
+}
+
+#dribbbleShots li:before {
+  position: absolute;
+  content: "";
+  width: 1000px;
+  height: 1000px;
+  background: #d3eaf8;
+  top: 0;
+  left: 0;
+  transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.5s;
+  opacity: 0;
+  transform: translate(-46%, -111%) rotate(60deg);
+}
+
+#dribbbleShots li img{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  height: 100%;
+}
+
+#dribbbleShots .title{
+  position: absolute;
+  bottom: 25px;
+  left: 30px;
+  font-size: 25px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  color: #fff;
+  transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.3s;
+  transform: translateY(30px);
+  opacity: 0;
+  width: 70%;
+  line-height: normal;
+}
+
+#dribbbleShots li:hover{
+  box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.21);
+  transform: scale(1.02);
+  transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.3s;
+}
+
+#dribbbleShots li:hover .title{
+  transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.3s;
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+#dribbbleShots li:hover:before{
+  opacity: .9;
+  transform: translate(-35%, -43%) rotate(60deg);
+  transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.5s;
+}
+</style>
