@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Mai Sari - Branding, UI/UX, Illustration' });
+  res.render('index', { title: 'Mai Sari - Visual/Product Designer & Illustrator' });
 });
 
 module.exports = router;
